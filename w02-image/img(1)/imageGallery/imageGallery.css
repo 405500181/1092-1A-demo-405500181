@@ -1,0 +1,18 @@
+#line3,
+#line4,
+#line5 {
+  display: flex;
+  flex-wrap: wrap; /*下拉*/
+}
+#line3 img {
+  width: 30%;
+  margin: 1.6%;
+}
+#line4 img {
+  width: 21%;
+  margin: 2%;
+}
+#line5 img {
+  width: 16%;
+  margin: 1.6%;
+}
