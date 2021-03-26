@@ -1,0 +1,22 @@
+$ cd /d
+$ ls -al
+$ git clone https://github.com/yourname/1092-1A-demo-id.git
+
+$ ls -l
+$ cd 1092-1A-demo-id // press Tab to complete the name
+$ git status
+$ git config --global user.email "youremail@gms.tku.edu.tw"
+$ git config --global user.name "yourname"
+
+Adding files
+ 
+$ git status
+$ git add *
+$ git status
+$ git commit -m "Initial commit, saving w01~w02 files"
+$ git status
+$ git push
+
+Go back to Github, and refresh web page
+
+Go to settings, and set up Github pages to get the URL for public.
