@@ -95,10 +95,9 @@ aside li a:hover {
 }
 
 .video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  margin:1rem;
+  height: 96%;
+  width: 96%;
   position: absolute;
 }
 #footer {
