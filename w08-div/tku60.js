@@ -38,19 +38,19 @@ function changePicture(index) {
   const p = document.querySelector('#play')
   switch(index) {
       case 1:
-        video.innerHTML ='<img src="image/img1.jpg">'
+        video.innerHTML ='<img src="image/img1.jpg"  style="width: 100%; height: auto">'
       break;
       case 2:
-        video.innerHTML ='<img src="image/img2.jpg">'
+        video.innerHTML ='<img src="image/img2.jpg"  style="width: 100%; height: auto">'
       break;
       case 3:
-        video.innerHTML ='<img src="image/img3.jpg">'
+        video.innerHTML ='<img src="image/img3.jpg"  style="width: 100%; height: auto">'
       break;
       case 4:
-        video.innerHTML ='<img src="image/img4.jpg">'
+        video.innerHTML ='<img src="image/img4.jpg"  style="width: 100%; height: auto">'
       break;
       case 5:
-        video.innerHTML ='<img src="image/img5.jpg">'
+        video.innerHTML ='<img src="image/img5.jpg"  style="width: 100%; height: auto">'
       break;
   }
 }
