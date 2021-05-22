@@ -7,7 +7,7 @@ body {
   background-color: white;
   color: rgb(66, 55, 55);
   font-size: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 a {
@@ -59,20 +59,223 @@ ul {
 .showcase {
   widows: 100%;
   height: 35rem;
-  background: url('./ms_img/img/slide1.png') no-repeat center center/cover;
+  background: url("./ms_img/img/slide1.png") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   padding: 5rem;
+  margin-bottom: 2rem;
   h2,
   p {
     margin-bottom: 1rem;
   }
+}
+
+.btn {
+  margin-top: 1rem;
+  background-color: #262626;
+  color: white;
+  padding: 0.7rem 0.7rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+/*home cards*/
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 5rem;
+  margin-bottom: 2rem;
+
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #0067b8;
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+}
+
+/*xbox*/
+
+.xbox {
+  width: 100%;
+  height: 500px;
+  background: url("./ms_img/img/xbox.png") no-repeat center center/cover;
+  margin-bottom: 2rem;
+  .content {
+    width: 40%;
+    padding: 5rem 0 0 3rem;
+    h2 {
+      font-size: 1.3rem;
+    }
+    p {
+      margin: 1rem 0 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+/*carbon*/
+.carbon_dark {
+  width: 100%;
+  height: 350px;
+  background: url("./ms_img/img/carbon.jpg") no-repeat center center/cover;
+  margin-bottom: 2rem;
+  .content {
+    width: 40%;
+    padding: 5rem 0 0 3rem;
+    h2 {
+      font-size: 1.3rem;
+      color: white;
+    }
+    p {
+      color: white;
+      margin: 1rem 0 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/*follow*/
+.follow {
+  width: 80%;
+  height: 50px;
+  margin: 2rem;
+  display: flex;
+  p {
+    padding-top: 0.2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 15px;
+  }
+  a {
+    margin-left: 1rem;
+  }
+}
+.links {
+  width: 100%;
+  height: flex;
+  background-color: rgb(229, 226, 226);
+  display: grid;
+  padding: 2rem;
+  grid-gap: 20px;
+  .links-inner {
+    width: 100%;
+    display: grid;
+    padding-left: 2.5rem;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.footer {
+  width: 100%;
+  height: flex;
+  background-color: rgb(229, 226, 226);
+  padding: 0.5rem;
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+    
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xbox {
+    height: 40%;
+    margin-bottom: 2rem;
+    .content {
+      width: 40%;
+      padding: 2.5rem 0 0 1.5rem;
+      p {
+        display: none;
+      }
+      h2 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .carbon_dark{
+    .content {
+        width: 40%;
+        padding: 2.5rem 0 0 1.5rem;
+        p {
+          display: none;
+        }
+        h2 {
+          margin-bottom: 2rem;
+        }
+      }
+  }
+  .links{
+    height: 400px;
+    .links-inner{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+    }
+  }
+  .footer{
+    height: 150px;
+    .footer-inner{
+        ul {
+            padding: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+          }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+  .xbox {
+    .content {
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
   .btn {
-    margin-top: 1rem;
-    background-color: #262626;
-    color: white;
-    padding: 1rem;
+    padding: 0.5rem 0.5rem;
+
+    font-size: 0.9rem;
+  }
+  .links{
+    height: 500px;
+    .links-inner{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+  }
+  .footer{
+    height: 180px;
+    .footer-inner{
+        ul {
+            padding: 1rem;
+            grid-template-columns: repeat(2, 1fr);
+          }
+    }
   }
 }

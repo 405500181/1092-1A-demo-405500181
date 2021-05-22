@@ -9,7 +9,7 @@ body {
   background-color: white;
   color: #423737;
   font-size: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -89,6 +89,7 @@ ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 5rem;
+  margin-bottom: 2rem;
 }
 
 .showcase h2,
@@ -96,9 +97,232 @@ ul {
   margin-bottom: 1rem;
 }
 
-.showcase .btn {
+.btn {
   margin-top: 1rem;
   background-color: #262626;
   color: white;
-  padding: 1rem;
+  padding: 0.7rem 0.7rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
 }
+
+/*home cards*/
+.home-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 5rem;
+  margin-bottom: 2rem;
+}
+
+.home-cards img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.home-cards h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.home-cards p {
+  font-size: 0.9rem;
+}
+
+.home-cards a {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #0067b8;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+/*xbox*/
+.xbox {
+  width: 100%;
+  height: 500px;
+  background: url("./ms_img/img/xbox.png") no-repeat center center/cover;
+  margin-bottom: 2rem;
+}
+
+.xbox .content {
+  width: 40%;
+  padding: 5rem 0 0 3rem;
+}
+
+.xbox .content h2 {
+  font-size: 1.3rem;
+}
+
+.xbox .content p {
+  margin: 1rem 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+/*carbon*/
+.carbon_dark {
+  width: 100%;
+  height: 350px;
+  background: url("./ms_img/img/carbon.jpg") no-repeat center center/cover;
+  margin-bottom: 2rem;
+}
+
+.carbon_dark .content {
+  width: 40%;
+  padding: 5rem 0 0 3rem;
+}
+
+.carbon_dark .content h2 {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.carbon_dark .content p {
+  color: white;
+  margin: 1rem 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+/*follow*/
+.follow {
+  width: 80%;
+  height: 50px;
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.follow p {
+  padding-top: 0.2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-right: 15px;
+}
+
+.follow a {
+  margin-left: 1rem;
+}
+
+.links {
+  width: 100%;
+  height: flex;
+  background-color: #e5e2e2;
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem;
+  grid-gap: 20px;
+}
+
+.links .links-inner {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  padding-left: 2.5rem;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.footer {
+  width: 100%;
+  height: flex;
+  background-color: #e5e2e2;
+  padding: 0.5rem;
+}
+
+.footer .footer-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.footer .footer-inner ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  padding-left: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .home-cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .xbox {
+    height: 40%;
+    margin-bottom: 2rem;
+  }
+  .xbox .content {
+    width: 40%;
+    padding: 2.5rem 0 0 1.5rem;
+  }
+  .xbox .content p {
+    display: none;
+  }
+  .xbox .content h2 {
+    margin-bottom: 2rem;
+  }
+  .carbon_dark .content {
+    width: 40%;
+    padding: 2.5rem 0 0 1.5rem;
+  }
+  .carbon_dark .content p {
+    display: none;
+  }
+  .carbon_dark .content h2 {
+    margin-bottom: 2rem;
+  }
+  .links {
+    height: 400px;
+  }
+  .links .links-inner {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+  .footer {
+    height: 150px;
+  }
+  .footer .footer-inner ul {
+    padding: 1rem;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .home-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .xbox .content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  .links {
+    height: 500px;
+  }
+  .links .links-inner {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+  .footer {
+    height: 180px;
+  }
+  .footer .footer-inner ul {
+    padding: 1rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*# sourceMappingURL=style.css.map */
