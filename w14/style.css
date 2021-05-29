@@ -36,12 +36,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 6rem;
-  font-size: 1.2rem;
+  height: 3.5rem;
+  font-size: 0.8rem;
 }
 
 .main-nav .logo {
-  width: 11rem;
+  width: 7rem;
 }
 
 .main-nav ul {
@@ -104,6 +104,34 @@ ul {
   padding: 0.7rem 0.7rem;
   cursor: pointer;
   display: inline-block;
+  font-size: 1.2rem;
+}
+
+/*add cards*/
+.cards_add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5rem;
+  margin-bottom: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.cards_add img {
+  width: 2rem;
+  margin: 1rem 5rem 1rem 5rem;
+}
+
+.cards_add h3 {
+  padding: 1rem;
+  margin: 0.5rem;
   font-size: 1.2rem;
 }
 
