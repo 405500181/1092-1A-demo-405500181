@@ -12,6 +12,111 @@ html {
 body {
   background-color: rgba(234, 238, 208, 0);
 }
+
+.nav {
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px #2c8b00;
+          box-shadow: 0 0 10px #2c8b00;
+}
+
+.nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.nav_listlogo {
+  margin-left: 15px;
+  list-style: none;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav_listlogo img {
+  width: 100px;
+}
+
+.nav_listitem {
+  margin-right: 0.2rem;
+  list-style: none;
+  font-weight: bold;
+  position: relative;
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+
+.nav_listitem::after {
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  border-radius: 1rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 0.8rem;
+  background-color: forestgreen;
+  -webkit-transition: width 200ms ease-in;
+  transition: width 200ms ease-in;
+}
+
+.nav_listitem:hover::after, .nav_listitem:focus::after {
+  width: 80%;
+}
+
+.nav_listitem:hover ul,
+.nav_listitem:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav_listitemdown {
+  position: absolute;
+  top: 3.5rem;
+  left: -1rem;
+  -webkit-box-shadow: 0 0 10px #2c8b00;
+          box-shadow: 0 0 10px #2c8b00;
+  background-color: white;
+  border-radius: 0rem;
+  width: 10rem;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.nav_listitemdown li {
+  list-style: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.nav_listitemdown li:hover, .nav_listitemdown li:focus {
+  background-color: #4ab319;
+}
+.header {
+  padding: 5rem 0 0 0;
+}
 #container {
   width: 90%;
   border: 2px solid purple;
